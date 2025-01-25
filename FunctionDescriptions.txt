@@ -1,0 +1,5 @@
+module_init(); -> give this function your function intialization this module in system 
+module_exit(); -> give this function your function exit to remove this  module from system
+module_param(); -> first param in your variable 
+		-> secound param is a data type of the first param (for string -> charp)
+		-> third param is a Permissions
