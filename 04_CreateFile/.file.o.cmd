@@ -1,8 +1,8 @@
-savedcmd_/home/ziad/Ziad/Device_Drivers/02_hello_param/hello.o :=  gcc-12 -Wp,-MMD,/home/ziad/Ziad/Device_Drivers/02_hello_param/.hello.o.d -nostdinc -I/usr/src/linux-headers-6.6.62+rpt-common-rpi/arch/arm/include -I./arch/arm/include/generated -I/usr/src/linux-headers-6.6.62+rpt-common-rpi/include -I./include -I/usr/src/linux-headers-6.6.62+rpt-common-rpi/arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I/usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi -I./include/generated/uapi -include /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/compiler-version.h -include /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/kconfig.h -include /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -D__LINUX_ARM_ARCH__=6 -fmacro-prefix-map=/usr/src/linux-headers-6.6.62+rpt-common-rpi/= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -fno-dwarf2-cfi-asm -mno-fdpic -fno-ipa-sra -mtp=cp15 -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -march=armv6k -mtune=arm1136j-s -msoft-float -Uarm -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -ftrivial-auto-var-init=zero -fno-stack-clash-protection -pg -fno-strict-overflow -fno-stack-check -fconserve-stack -Wall -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wframe-larger-than=1024 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-array-bounds -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-restrict -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-overflow -Wno-stringop-truncation -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -mstack-protector-guard=tls -mstack-protector-guard-offset=1192  -DMODULE  -DKBUILD_BASENAME='"hello"' -DKBUILD_MODNAME='"hello"' -D__KBUILD_MODNAME=kmod_hello -c -o /home/ziad/Ziad/Device_Drivers/02_hello_param/hello.o /home/ziad/Ziad/Device_Drivers/02_hello_param/hello.c  
+savedcmd_/home/ziad/Ziad/Device_Driver/04_CreateFile/file.o :=  gcc-12 -Wp,-MMD,/home/ziad/Ziad/Device_Driver/04_CreateFile/.file.o.d -nostdinc -I/usr/src/linux-headers-6.6.62+rpt-common-rpi/arch/arm/include -I./arch/arm/include/generated -I/usr/src/linux-headers-6.6.62+rpt-common-rpi/include -I./include -I/usr/src/linux-headers-6.6.62+rpt-common-rpi/arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I/usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi -I./include/generated/uapi -include /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/compiler-version.h -include /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/kconfig.h -include /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -D__LINUX_ARM_ARCH__=6 -fmacro-prefix-map=/usr/src/linux-headers-6.6.62+rpt-common-rpi/= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -fno-dwarf2-cfi-asm -mno-fdpic -fno-ipa-sra -mtp=cp15 -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -march=armv6k -mtune=arm1136j-s -msoft-float -Uarm -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -ftrivial-auto-var-init=zero -fno-stack-clash-protection -pg -fno-strict-overflow -fno-stack-check -fconserve-stack -Wall -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wframe-larger-than=1024 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-array-bounds -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-restrict -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-overflow -Wno-stringop-truncation -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -mstack-protector-guard=tls -mstack-protector-guard-offset=1192  -DMODULE  -DKBUILD_BASENAME='"file"' -DKBUILD_MODNAME='"file"' -D__KBUILD_MODNAME=kmod_file -c -o /home/ziad/Ziad/Device_Driver/04_CreateFile/file.o /home/ziad/Ziad/Device_Driver/04_CreateFile/file.c  
 
-source_/home/ziad/Ziad/Device_Drivers/02_hello_param/hello.o := /home/ziad/Ziad/Device_Drivers/02_hello_param/hello.c
+source_/home/ziad/Ziad/Device_Driver/04_CreateFile/file.o := /home/ziad/Ziad/Device_Driver/04_CreateFile/file.c
 
-deps_/home/ziad/Ziad/Device_Drivers/02_hello_param/hello.o := \
+deps_/home/ziad/Ziad/Device_Driver/04_CreateFile/file.o := \
   /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/kconfig.h \
@@ -742,7 +742,171 @@ deps_/home/ziad/Ziad/Device_Drivers/02_hello_param/hello.o := \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
   /usr/src/linux-headers-6.6.62+rpt-common-rpi/arch/arm/include/asm/unwind.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/fs.h \
+    $(wildcard include/config/READ_ONLY_THP_FOR_FS) \
+    $(wildcard include/config/FS_POSIX_ACL) \
+    $(wildcard include/config/CGROUP_WRITEBACK) \
+    $(wildcard include/config/IMA) \
+    $(wildcard include/config/FILE_LOCKING) \
+    $(wildcard include/config/FSNOTIFY) \
+    $(wildcard include/config/FS_ENCRYPTION) \
+    $(wildcard include/config/FS_VERITY) \
+    $(wildcard include/config/EPOLL) \
+    $(wildcard include/config/UNICODE) \
+    $(wildcard include/config/QUOTA) \
+    $(wildcard include/config/FS_DAX) \
+    $(wildcard include/config/BLOCK) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/wait_bit.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/kdev_t.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi/linux/kdev_t.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/dcache.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/rculist_bl.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/list_bl.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/bit_spinlock.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/lockref.h \
+    $(wildcard include/config/ARCH_USE_CMPXCHG_LOCKREF) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/stringhash.h \
+    $(wildcard include/config/DCACHE_WORD_ACCESS) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/hash.h \
+    $(wildcard include/config/HAVE_ARCH_HASH) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/path.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/list_lru.h \
+    $(wildcard include/config/MEMCG_KMEM) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/shrinker.h \
+    $(wildcard include/config/SHRINKER_DEBUG) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/capability.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi/linux/capability.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/semaphore.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/fcntl.h \
+    $(wildcard include/config/ARCH_32BIT_OFF_T) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi/linux/fcntl.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/arch/arm/include/uapi/asm/fcntl.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi/asm-generic/fcntl.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi/linux/openat2.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/migrate_mode.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/percpu-rwsem.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/rcuwait.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/sched/signal.h \
+    $(wildcard include/config/SCHED_AUTOGROUP) \
+    $(wildcard include/config/BSD_PROCESS_ACCT) \
+    $(wildcard include/config/TASKSTATS) \
+    $(wildcard include/config/STACK_GROWSUP) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/signal.h \
+    $(wildcard include/config/DYNAMIC_SIGFRAME) \
+    $(wildcard include/config/PROC_FS) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/sched/jobctl.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/sched/task.h \
+    $(wildcard include/config/HAVE_EXIT_THREAD) \
+    $(wildcard include/config/ARCH_WANTS_DYNAMIC_TASK_STRUCT) \
+    $(wildcard include/config/HAVE_ARCH_THREAD_STRUCT_WHITELIST) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/uaccess.h \
+    $(wildcard include/config/ARCH_HAS_SUBPAGE_FAULTS) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/fault-inject-usercopy.h \
+    $(wildcard include/config/FAULT_INJECTION_USERCOPY) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/arch/arm/include/asm/uaccess.h \
+    $(wildcard include/config/CPU_SW_DOMAIN_PAN) \
+    $(wildcard include/config/HAVE_EFFICIENT_UNALIGNED_ACCESS) \
+    $(wildcard include/config/UACCESS_WITH_MEMCPY) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/arch/arm/include/asm/domain.h \
+    $(wildcard include/config/IO_36) \
+    $(wildcard include/config/CPU_USE_DOMAINS) \
+    $(wildcard include/config/CPU_CP15_MMU) \
+  arch/arm/include/generated/asm/unaligned.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/asm-generic/unaligned.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/unaligned/packed_struct.h \
+  arch/arm/include/generated/asm/extable.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/asm-generic/extable.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/asm-generic/access_ok.h \
+    $(wildcard include/config/ALTERNATE_USER_ADDRESS_SPACE) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/cred.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/key.h \
+    $(wildcard include/config/KEY_NOTIFICATIONS) \
+    $(wildcard include/config/NET) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/assoc_array.h \
+    $(wildcard include/config/ASSOCIATIVE_ARRAY) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/sched/user.h \
+    $(wildcard include/config/VFIO_PCI_ZDEV_KVM) \
+    $(wildcard include/config/IOMMUFD) \
+    $(wildcard include/config/WATCH_QUEUE) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/ratelimit.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/rcu_sync.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/delayed_call.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/uuid.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/errseq.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/ioprio.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/sched/rt.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/iocontext.h \
+    $(wildcard include/config/BLK_ICQ) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi/linux/ioprio.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/fs_types.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/mount.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/mnt_idmapping.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/slab.h \
+    $(wildcard include/config/DEBUG_SLAB) \
+    $(wildcard include/config/SLUB_TINY) \
+    $(wildcard include/config/FAILSLAB) \
+    $(wildcard include/config/KFENCE) \
+    $(wildcard include/config/SLAB) \
+    $(wildcard include/config/SLUB) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/percpu-refcount.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/kasan.h \
+    $(wildcard include/config/KASAN_STACK) \
+    $(wildcard include/config/KASAN_VMALLOC) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/kasan-enabled.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi/linux/fs.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/quota.h \
+    $(wildcard include/config/QUOTA_NETLINK_INTERFACE) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi/linux/dqblk_xfs.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/dqblk_v1.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/dqblk_v2.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/dqblk_qtree.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/projid.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/uapi/linux/quota.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/cdev.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/device.h \
+    $(wildcard include/config/HAS_IOMEM) \
+    $(wildcard include/config/GENERIC_MSI_IRQ) \
+    $(wildcard include/config/ENERGY_MODEL) \
+    $(wildcard include/config/PINCTRL) \
+    $(wildcard include/config/DMA_OPS) \
+    $(wildcard include/config/DMA_DECLARE_COHERENT) \
+    $(wildcard include/config/DMA_CMA) \
+    $(wildcard include/config/SWIOTLB) \
+    $(wildcard include/config/SWIOTLB_DYNAMIC) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_DEVICE) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU_ALL) \
+    $(wildcard include/config/DMA_OPS_BYPASS) \
+    $(wildcard include/config/PM_SLEEP) \
+    $(wildcard include/config/OF) \
+    $(wildcard include/config/DEVTMPFS) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/dev_printk.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/energy_model.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/sched/cpufreq.h \
+    $(wildcard include/config/CPU_FREQ) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/sched/topology.h \
+    $(wildcard include/config/SCHED_DEBUG) \
+    $(wildcard include/config/SCHED_CLUSTER) \
+    $(wildcard include/config/SCHED_MC) \
+    $(wildcard include/config/CPU_FREQ_GOV_SCHEDUTIL) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/sched/idle.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/ioport.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/klist.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/pm.h \
+    $(wildcard include/config/VT_CONSOLE_SLEEP) \
+    $(wildcard include/config/CXL_SUSPEND) \
+    $(wildcard include/config/PM) \
+    $(wildcard include/config/PM_CLK) \
+    $(wildcard include/config/PM_GENERIC_DOMAINS) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/device/bus.h \
+    $(wildcard include/config/ACPI) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/device/class.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/device/driver.h \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/arch/arm/include/asm/device.h \
+    $(wildcard include/config/ARM_DMA_USE_IOMMU) \
+    $(wildcard include/config/ARCH_OMAP) \
+  /usr/src/linux-headers-6.6.62+rpt-common-rpi/include/linux/pm_wakeup.h \
 
-/home/ziad/Ziad/Device_Drivers/02_hello_param/hello.o: $(deps_/home/ziad/Ziad/Device_Drivers/02_hello_param/hello.o)
+/home/ziad/Ziad/Device_Driver/04_CreateFile/file.o: $(deps_/home/ziad/Ziad/Device_Driver/04_CreateFile/file.o)
 
-$(deps_/home/ziad/Ziad/Device_Drivers/02_hello_param/hello.o):
+$(deps_/home/ziad/Ziad/Device_Driver/04_CreateFile/file.o):

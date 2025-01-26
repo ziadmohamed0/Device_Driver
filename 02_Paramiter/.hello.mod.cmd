@@ -1,1 +1,0 @@
-savedcmd_/home/ziad/Ziad/Device_Drivers/02_hello_param/hello.mod := printf '%s\n'   hello.o | awk '!x[$$0]++ { print("/home/ziad/Ziad/Device_Drivers/02_hello_param/"$$0) }' > /home/ziad/Ziad/Device_Drivers/02_hello_param/hello.mod
