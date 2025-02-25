@@ -1,0 +1,17 @@
+02:31:16 **** Incremental Build of configuration Debug for project ZiadStm32f103x ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/CortexM3/CortexM3_Core_NVIC.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/CortexM3/CortexM3_Core_NVIC.d" -MT"Src/CortexM3/CortexM3_Core_NVIC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/CortexM3/CortexM3_Core_NVIC.o"
+arm-none-eabi-gcc -o "ZiadStm32f103x.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/ziad/ARM/02-STM32_Drivers/ZiadStm32f103x/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ZiadStm32f103x.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ZiadStm32f103x.elf
+ 
+arm-none-eabi-size   ZiadStm32f103x.elf 
+arm-none-eabi-objdump -h -S  ZiadStm32f103x.elf  > "ZiadStm32f103x.list"
+   text	   data	    bss	    dec	    hex	filename
+    780	      8	   1568	   2356	    934	ZiadStm32f103x.elf
+Finished building: default.size.stdout
+ 
+Finished building: ZiadStm32f103x.list
+ 
+
+02:31:17 Build Finished. 0 errors, 0 warnings. (took 782ms)
+

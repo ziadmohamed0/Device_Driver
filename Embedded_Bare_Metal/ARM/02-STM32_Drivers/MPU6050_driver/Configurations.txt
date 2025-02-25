@@ -1,0 +1,6 @@
+System Core : 
+RCC -> HSE -> Crystal
+SYS -> Debug -> Serial Wire 
+
+connectivity : 
+I2C1

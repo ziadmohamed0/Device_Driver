@@ -1,0 +1,21 @@
+01:15:28 **** Incremental Build of configuration Debug for project STM32F103xx_initial ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/CortexM3_Core_SCB.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/CortexM3_Core_SCB.d" -MT"Src/CortexM3_Core_SCB.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/CortexM3_Core_SCB.o"
+../Src/CortexM3_Core_SCB.c: In function 'SCB_setPriorityGroup':
+../Src/CortexM3_Core_SCB.c:14:11: warning: unused variable 'Prior_Group_Temp' [-Wunused-variable]
+   14 |  uint32_t Prior_Group_Temp = ((uint32_t)copyPriorityGroup & (uint32_t)0x07);
+      |           ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32F103xx_initial.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/ziad/ARM/02-STM32_Drivers/STM32F103xx_initial/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F103xx_initial.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F103xx_initial.elf
+ 
+arm-none-eabi-size   STM32F103xx_initial.elf 
+arm-none-eabi-objdump -h -S  STM32F103xx_initial.elf  > "STM32F103xx_initial.list"
+   text	   data	    bss	    dec	    hex	filename
+    568	      8	   1568	   2144	    860	STM32F103xx_initial.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F103xx_initial.list
+ 
+
+01:15:28 Build Finished. 0 errors, 1 warnings. (took 781ms)
+

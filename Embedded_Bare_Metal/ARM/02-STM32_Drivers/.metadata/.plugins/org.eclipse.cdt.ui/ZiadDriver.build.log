@@ -1,0 +1,10 @@
+03:45:45 **** Incremental Build of configuration Debug for project ZiadDriver ****
+make -j4 all 
+arm-none-eabi-size   ZiadDriver.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	ZiadDriver.elf
+Finished building: default.size.stdout
+ 
+
+03:45:46 Build Finished. 0 errors, 0 warnings. (took 683ms)
+

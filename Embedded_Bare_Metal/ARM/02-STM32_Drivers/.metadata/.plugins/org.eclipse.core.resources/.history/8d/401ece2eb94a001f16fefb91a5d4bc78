@@ -1,0 +1,15 @@
+/**
+ ******************************************************************************
+ * @file           : main.c
+ * @author         : Ziad Mohammed Fathi Mohammed
+ * @brief          : Main program body source file
+ ******************************************************************************
+ */
+
+#include "../Inc/main.h"
+
+int main(void)
+{
+    /* Loop forever */
+	for(;;);
+}

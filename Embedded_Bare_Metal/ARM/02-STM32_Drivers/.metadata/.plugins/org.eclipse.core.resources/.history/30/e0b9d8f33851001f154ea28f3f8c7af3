@@ -1,0 +1,16 @@
+/**
+ ******************************************************************************
+ * @file           : main.c
+ * @author         : Ziad Mohammed Fathi
+ * @brief          : Main program body
+ ******************************************************************************
+ */
+#include "CortexM3_Core_NVIC.h"
+int main(void)
+{
+	NVIC_setEnableIQR(UART4_IQRn);
+   while(1)
+   {
+
+   }
+}

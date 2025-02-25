@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;STM32F103xx/Inc/CortexM3_Core/STM32F103xx/STM32F103xx_Vec.h&apos; to &apos;STM32F103xx_Types.h&apos;" description="Rename resource &apos;STM32F103xx_Vec.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/CortexM3_Core/STM32F103xx/STM32F103xx_Vec.h" name="STM32F103xx_Types.h" stamp="1722907336840" updateReferences="true"/>
+</session>

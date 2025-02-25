@@ -1,0 +1,20 @@
+04:22:50 **** Incremental Build of configuration Debug for project STM32F103xx ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/CortexM3_Core/CortexM3_Core_NVIC.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/CortexM3_Core/CortexM3_Core_NVIC.d" -MT"Src/CortexM3_Core/CortexM3_Core_NVIC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/CortexM3_Core/CortexM3_Core_NVIC.o"
+arm-none-eabi-gcc "../Src/CortexM3_Core/CortexM3_Core_SCB.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/CortexM3_Core/CortexM3_Core_SCB.d" -MT"Src/CortexM3_Core/CortexM3_Core_SCB.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/CortexM3_Core/CortexM3_Core_SCB.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "STM32F103xx.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/ziad/ARM/02-STM32_Drivers/STM32F103xx/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F103xx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/home/ziad/st/stm32cubeide_1.16.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: warning: STM32F103xx.elf has a LOAD segment with RWX permissions
+Finished building target: STM32F103xx.elf
+ 
+arm-none-eabi-size  STM32F103xx.elf 
+arm-none-eabi-objdump -h -S STM32F103xx.elf  > "STM32F103xx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1160	      8	   1584	   2752	    ac0	STM32F103xx.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F103xx.list
+ 
+
+04:22:51 Build Finished. 0 errors, 1 warnings. (took 792ms)
+

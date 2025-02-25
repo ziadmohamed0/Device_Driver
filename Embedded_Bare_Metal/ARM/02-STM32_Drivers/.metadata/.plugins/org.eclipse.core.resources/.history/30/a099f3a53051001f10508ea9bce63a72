@@ -1,0 +1,30 @@
+/**
+ ******************************************************************************
+ * @file           : CortexM3_Core_NVIC_Reg.h
+ * @author         : Ziad Mohammed Fathi
+ * @brief          : CortexM3_Core_NVIC_Reg Header body
+ ******************************************************************************
+ */
+
+#ifndef CORTEXM3_CORE_NVIC_REG_H_
+#define CORTEXM3_CORE_NVIC_REG_H_
+
+/* ------------------------------ Include Start ---------------------------- */
+#include "STM32F103xx_VEC.h"
+/* ------------------------------ Include END ------------------------------ */
+
+/* ------------------------------ Macro Start ---------------------------- */
+#define NVIC_ISER0	*((volatile uint32_t *) 0xE000E100)
+/* ------------------------------ Macro END ------------------------------ */
+
+/* ------------------- Macro Functions Declarations Start ----------------- */
+/* ------------------- Macro Functions Declarations END ------------------- */
+
+/* ---------------------- Data Types Declarations Start -------------------- */
+
+/* ---------------------- Data Types Declarations END ---------------------- */
+
+/* ------------------- Software interface Declarations Start ----------------- */
+/* ------------------- Software interface Declarations END ------------------- */
+
+#endif /* CORTEXM3_CORE_NVIC_REG_H_ */

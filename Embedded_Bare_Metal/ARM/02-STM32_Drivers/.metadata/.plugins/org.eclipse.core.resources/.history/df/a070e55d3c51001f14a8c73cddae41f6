@@ -1,0 +1,24 @@
+/**
+ ******************************************************************************
+ * @file           : main.c
+ * @author         : Ziad Mohammed Fathi
+ * @brief          : Main program body
+ ******************************************************************************
+ */
+#include "CortexM3_Core_NVIC.h"
+
+int main(void)
+{
+	NVIC_setEnableIQR(USART3_IQRn);
+	NVIC_setEnableIQR(EXTI15_10_IQRn);
+	NVIC_setEnableIQR(RCC_IQRn);
+	NVIC_setEnableIQR(DMA2_Channel3_IQRn);
+	NVIC_setEnableIQR(TIM7_IQRn);
+	NVIC_setEnableIQR(TIM5_IQRn);
+
+
+   while(1)
+   {
+
+   }
+}

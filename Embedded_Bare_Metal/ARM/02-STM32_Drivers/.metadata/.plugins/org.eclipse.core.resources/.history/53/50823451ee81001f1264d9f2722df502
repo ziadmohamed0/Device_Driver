@@ -1,0 +1,102 @@
+/**
+--------------------------------------------------------
+--------------------------------------------------------
+ * @name    : DIO_prog.c
+ * @author  : Ziad Mohammed Fathy.
+ * @date    : Sep.29.2024
+ * @version :   _v1_
+ * @brief   :
+--------------------------------------------------------
+--------------------------------------------------------
+ */
+
+
+#include "03_Mcal/STM32F103/DIO/DIO_init.h"
+
+/**
+ * @brief	:
+ * @param1	:	PORTS_t -> Number of Port (PORTA, PORTB, PORTC).
+ * @param2	:	PINS_t  -> Number of Pin (PIN_0 ~ PIN_15).
+ * @param3	:	copyDirection- > Mode Of pin (INPUT, OUTPUT).
+ * @retVal	:	void.
+ */
+void MGPIO_vSetPinDirection(PORTS_t copyPORTx, PINS_t copyPINx, uint8_t copyDirection) {
+	switch (copyPORTx) {
+		case PORTA:
+
+			break;
+		case PORTB:
+
+			break;
+
+		case PORTC :
+
+			break;
+	}
+}
+
+/**
+ * @brief	:
+ * @param1	:	PORTS_t -> Number of Port (PORTA, PORTB, PORTC).
+ * @param2	:	PINS_t  -> Number of Pin (PIN_0 ~ PIN_15).
+ * @param3	:	STATUS_t -> Status of Pin (HIGH, LOW).
+ * @retVal	:	void.
+ */
+void MGPIO_vSetPinStatus(PORTS_t copyPORTx, PINS_t copyPINx, STATUS_t copyValue) {
+	switch (copyPORTx) {
+		case PORTA:
+
+			break;
+		case PORTB:
+
+			break;
+
+		case PORTC :
+
+			break;
+	}
+}
+
+/**
+ * @brief	:
+ * @param1	:	PORTS_t -> Number of Port (PORTA, PORTB, PORTC).
+ * @param2	:	PINS_t  -> Number of Pin (PIN_0 ~ PIN_15).
+ * @retVal	:	return status of pin (HIGH, LOW).
+ */
+uint8_t MGPIO_u8GetPinStatus(PORTS_t copyPORTx, PINS_t copyPINx) {
+	uint8_t retVal = 0;
+	switch (copyPORTx) {
+		case PORTA:
+
+			break;
+		case PORTB:
+
+			break;
+
+		case PORTC :
+
+			break;
+	}
+	return retVal;
+}
+
+/**
+ * @brief	:
+ * @param1	:	PORTS_t -> Number of Port (PORTA, PORTB, PORTC).
+ * @param2	:	PINS_t  -> Number of Pin (PIN_0 ~ PIN_15).
+ * @retVal	:	void.
+ */
+void MGPIO_vTogglePinStatus(PORTS_t copyPORTx, PINS_t copyPINx) {
+	switch (copyPORTx) {
+		case PORTA:
+
+			break;
+		case PORTB:
+
+			break;
+
+		case PORTC :
+
+			break;
+	}
+}

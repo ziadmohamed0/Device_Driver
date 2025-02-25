@@ -1,0 +1,13 @@
+/*
+ * CortexM3_Core_NVIC_Reg.h
+ *
+ *  Created on: Aug 3, 2024
+ *      Author: ziad
+ */
+
+#ifndef CORTEXM3_CORE_NVIC_REG_H_
+#define CORTEXM3_CORE_NVIC_REG_H_
+
+
+
+#endif /* CORTEXM3_CORE_NVIC_REG_H_ */

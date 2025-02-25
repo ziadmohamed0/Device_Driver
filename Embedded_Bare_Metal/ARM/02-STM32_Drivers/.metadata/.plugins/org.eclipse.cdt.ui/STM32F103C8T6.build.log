@@ -1,0 +1,10 @@
+04:43:38 **** Incremental Build of configuration Debug for project STM32F103C8T6 ****
+make -j4 all 
+arm-none-eabi-gcc -o "STM32F103C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/ziad/ARM/02-STM32_Drivers/STM32F103C8T6/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F103C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/app/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.200.202301161003/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld:/home/ziad/ARM/02-STM32_Drivers/STM32F103C8T6/STM32F103C8TX_FLASH.ld:88: non constant or forward reference address expression for section .ARM.extab
+collect2: error: ld returned 1 exit status
+make: *** [makefile:64: STM32F103C8T6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+04:43:38 Build Failed. 2 errors, 0 warnings. (took 833ms)
+

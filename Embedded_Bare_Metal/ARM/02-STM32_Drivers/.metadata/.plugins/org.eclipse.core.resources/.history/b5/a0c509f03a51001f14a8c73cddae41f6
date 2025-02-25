@@ -1,0 +1,48 @@
+/**
+ ******************************************************************************
+ * @file           : CortexM3_Core_NVIC.c
+ * @author         : Ziad Mohammed Fathi
+ * @brief          : CortexM3_Core_NVIC program body
+ ******************************************************************************
+ */
+#include "CortexM3_Core_NVIC.h"
+
+void NVIC_setEnableIQR(IQRn_t copyIQRn)
+{
+	if((uint32_t)copyIQRn >= 0)
+	{
+		NVIC_ISER->NVIC_ISER_t[(uint32_t)copyIQRn >> 5] = ((uint32_t)copyIQRn & 0x1F);
+	}
+}
+
+void NVIC_setDisableIQR(IQRn_t copyIQRn)
+{
+	if(copyIQRn >= 0)
+	{
+
+	}
+}
+
+void NVIC_setPendingIQR(IQRn_t copyIQRn)
+{
+	if(copyIQRn >= 0)
+	{
+
+	}
+}
+
+void NVIC_clearPendingIQR(IQRn_t copyIQRn)
+{
+	if(copyIQRn >= 0)
+	{
+
+	}
+}
+
+uint32_t NVIC_getActiveIQR(IQRn_t copyIQRn)
+{
+	if(copyIQRn >= 0)
+	{
+
+	}
+}

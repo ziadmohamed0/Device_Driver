@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;STM32F102xx/Src/CortexM3_Core/CortexM3_Core_Systick.h&apos; to &apos;CortexM3_Core_Systick.c&apos;" description="Rename resource &apos;CortexM3_Core_Systick.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/CortexM3_Core/CortexM3_Core_Systick.h" name="CortexM3_Core_Systick.c" stamp="1723095777504" updateReferences="true"/>
+</session>

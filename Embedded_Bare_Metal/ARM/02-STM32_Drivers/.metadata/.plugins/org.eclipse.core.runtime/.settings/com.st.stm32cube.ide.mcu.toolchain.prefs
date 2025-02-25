@@ -1,0 +1,6 @@
+default=com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+eclipse.preferences.version=1
+local.format=1
+local/0/location=/home/ziad/gcc-arm-none-eabi-5_4-2016q3/bin
+local/0/name=GNU
+local/0/prefix=arm-none-eabi-

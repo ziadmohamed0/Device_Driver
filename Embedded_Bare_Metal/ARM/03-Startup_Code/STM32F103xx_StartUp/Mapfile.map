@@ -1,0 +1,181 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00010000         xr
+RAM              0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x20005000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000200                        _Min_Heap_Size = 0x200
+                0x00000400                        _Min_Stack_Size = 0x400
+
+.isr_vector     0x08000000      0x134
+                0x08000000                        . = ALIGN (0x4)
+ *(isr_vector)
+                0x08000000                        . = ALIGN (0x4)
+ .isr_vector    0x08000000      0x134 StartUp_STM32F103xx.o
+                0x08000000                Vector_Table
+
+.text           0x08000134       0xb8
+                0x08000134                        . = ALIGN (0x4)
+ *(.text)
+ .text          0x08000134        0x6 Application.o
+                0x08000134                main
+ *fill*         0x0800013a        0x2 
+ .text          0x0800013c       0xb0 StartUp_STM32F103xx.o
+                0x08000148                Reset_Handler
+                0x080001e0                FLASH_Handler
+                0x080001e0                SVCall_Handler
+                0x080001e0                HardFault_Handler
+                0x080001e0                SysTick_Handler
+                0x080001e0                USART3_Handler
+                0x080001e0                DMA1_Channel7_Handler
+                0x080001e0                PendSV_Handler
+                0x080001e0                NMI_Handler
+                0x080001e0                DMA1_Channel6_Handler
+                0x080001e0                EXTI15_10_Handler
+                0x080001e0                USBWakeup_Handler
+                0x080001e0                DMA2_Channel1_Handler
+                0x080001e0                I2C1_EV_Handler
+                0x080001e0                ADC1_2_Handler
+                0x080001e0                WWDG_Handler
+                0x080001e0                EXTI4_Handler
+                0x080001e0                DMA2_Channel4_Handler
+                0x080001e0                DMA1_Channel1_Handler
+                0x080001e0                I2C1_ER_Handler
+                0x080001e0                RTC_Handler
+                0x080001e0                UsageFault_Handler
+                0x080001e0                TIM1_CC_Handler
+                0x080001e0                I2C2_ER_Handler
+                0x080001e0                TIM8_CC_Handler
+                0x080001e0                TIM8_BRK_Handler
+                0x080001e0                USB_HP_CAN_TX_Handler
+                0x080001e0                CAN_RX1_Handler
+                0x080001e0                TIM1_BRK_Handler
+                0x080001e0                FSMC_Handler
+                0x080001e0                EXTI1_Handler
+                0x080001e0                TIM8_TRG_COM_Handler
+                0x080001e0                EXTI3_Handler
+                0x080001e0                USB_LP_CAN_RX0_Handler
+                0x080001e0                EXTI2_Handler
+                0x080001e0                UART4_Handler
+                0x080001e0                EXTI9_5_Handler
+                0x080001e0                TIM2_Handler
+                0x080001e0                USART1_Handler
+                0x080001e0                DMA1_Channel4_Handler
+                0x080001e0                TIM3_Handler
+                0x080001e0                CAN_SCE_Handler
+                0x080001e0                Default_Handler
+                0x080001e0                DMA1_Channel3_Handler
+                0x080001e0                TIM4_Handler
+                0x080001e0                SPI2_Handler
+                0x080001e0                DMA1_Channel2_Handler
+                0x080001e0                MemManage_Handler
+                0x080001e0                EXTI0_Handler
+                0x080001e0                TIM1_UP_Handler
+                0x080001e0                SDIO_Handler
+                0x080001e0                TIM8_UP_Handler
+                0x080001e0                DMA1_Channel5_Handler
+                0x080001e0                USART2_Handler
+                0x080001e0                DMA2_Channel4_5_Handler
+                0x080001e0                SPI1_Handler
+                0x080001e0                ADC3_Handler
+                0x080001e0                I2C2_EV_Handler
+                0x080001e0                Debug_Monitor_Handler
+                0x080001e0                SPI3_Handler
+                0x080001e0                DMA2_Channel3_Handler
+                0x080001e0                RCC_Handler
+                0x080001e0                PVD_Handler
+                0x080001e0                UART5_Handler
+                0x080001e0                DMA2_Channel2_Handler
+                0x080001e0                TIM5_Handler
+                0x080001e0                TIM7_Handler
+                0x080001e0                BusFault_Handler
+                0x080001e0                TIM6_Handler
+                0x080001e0                RTCAlarm_Handler
+                0x080001e0                TIM1_TRG_COM_Handler
+                0x080001e0                TAMPER_Handler
+ *(.text*)
+                0x080001ec                        . = ALIGN (0x4)
+                0x080001ec                        _etext = .
+
+.glue_7         0x080001ec        0x0
+ .glue_7        0x080001ec        0x0 linker stubs
+
+.glue_7t        0x080001ec        0x0
+ .glue_7t       0x080001ec        0x0 linker stubs
+
+.vfp11_veneer   0x080001ec        0x0
+ .vfp11_veneer  0x080001ec        0x0 linker stubs
+
+.v4_bx          0x080001ec        0x0
+ .v4_bx         0x080001ec        0x0 linker stubs
+
+.iplt           0x080001ec        0x0
+ .iplt          0x080001ec        0x0 StartUp_STM32F103xx.o
+
+.rel.dyn        0x080001ec        0x0
+ .rel.iplt      0x080001ec        0x0 StartUp_STM32F103xx.o
+
+.rodata         0x080001ec        0x0
+                0x080001ec                        . = ALIGN (0x4)
+ *(.rodata)
+ *(.rodata*)
+                0x080001ec                        . = ALIGN (0x4)
+                0x080001ec                        _erodata = .
+                0x080001ec                        _sidata = LOADADDR (.data)
+
+.data           0x20000000        0x4 load address 0x080001ec
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _sdata = .
+ *(.data)
+ .data          0x20000000        0x0 Application.o
+ .data          0x20000000        0x4 StartUp_STM32F103xx.o
+                0x20000000                MSP_Val
+ *(.data*)
+                0x20000004                        . = ALIGN (0x4)
+                0x20000004                        _edata = .
+
+.igot.plt       0x20000004        0x0 load address 0x080001f0
+ .igot.plt      0x20000004        0x0 StartUp_STM32F103xx.o
+
+.bss            0x20000004        0x0 load address 0x080001f0
+                0x20000004                        . = ALIGN (0x4)
+                0x20000004                        _sbss = .
+ *(.bss)
+ .bss           0x20000004        0x0 Application.o
+ .bss           0x20000004        0x0 StartUp_STM32F103xx.o
+ *(.bss*)
+                0x20000004                        . = ALIGN (0x4)
+                0x20000004                        _ebss = .
+
+._user_heap_stack
+                0x20000004      0x604 load address 0x080001f0
+                0x20000008                        . = ALIGN (0x8)
+ *fill*         0x20000004        0x4 
+                0x20000208                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000008      0x200 
+                0x20000608                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000208      0x400 
+                0x20000608                        . = ALIGN (0x8)
+LOAD Application.o
+LOAD StartUp_STM32F103xx.o
+OUTPUT(Elf_File.elf elf32-littlearm)
+LOAD linker stubs
+
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 Application.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000026       0x27 StartUp_STM32F103xx.o
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d Application.o
+ .ARM.attributes
+                0x0000002d       0x2d StartUp_STM32F103xx.o
