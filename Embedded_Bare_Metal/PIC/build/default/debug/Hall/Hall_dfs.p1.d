@@ -1,0 +1,26 @@
+build/default/debug/Hall/Hall_dfs.p1:  \
+Hall/Hall_dfs.c  \
+Hall/Hall_dfs.h  \
+Hall/Led/Hall_Led_init.h  \
+Hall/Led/../../Mcal/Mcal_dfs.h  \
+Hall/Led/../../Mcal/Mcal_interrupt/Mcal_external_interrupt.h  \
+Hall/Led/../../Mcal/Mcal_interrupt/Mcal_interrupt_cfg.h  \
+Hall/Led/../../Mcal/Mcal_interrupt/../Mcal_Std_Types.h  \
+Hall/Led/../../Mcal/Mcal_Compiler.h  \
+Hall/Led/../../Mcal/Mcal_Bit_Math.h  \
+Hall/Led/../../Mcal/Mcal_interrupt/Mcal_interrupt_gen_cfg.h  \
+Hall/Led/../../Mcal/Mcal_interrupt/../Mcal_GPIO/Mcal_GPIO_init.h  \
+Hall/Led/../../Mcal/Mcal_interrupt/../Mcal_GPIO/../Mcal_Device_cfg.h  \
+Hall/Led/../../Mcal/Mcal_interrupt/Mcal_internal_interrupt.h  \
+Hall/Led/../../Mcal/Mcal_interrupt/Mcal_interrupt_manager.h  \
+Hall/Led/../../Mcal/Mcal_EEPROM/Mcal_EEPROM_init.h  \
+Hall/Led/../../Mcal/Mcal_ADC/Mcal_ADC_init.h  \
+Hall/Led/../../Mcal/Mcal_ADC/MCAL_ADC_cfg.h  \
+Hall/Led/../../Mcal/Mcal_Timer_0/Mcal_Timer_0_init.h  \
+Hall/Led/../../Mcal/Mcal_Timer_0/../Mcal_dfs.h  \
+Hall/Button/Hall_Button_init.h  \
+Hall/Relay/Hall_Relay_init.h  \
+Hall/DC_Motor/Hall_Dc_Motor_init.h  \
+Hall/Seven_seg/Hall_Seven_seg_init.h  \
+Hall/Key_Pad/Hall_Key_Pad_init.h  \
+Hall/LCD/Hall_lcd_init.h 

@@ -1,0 +1,508 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"42 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X/Hall/Hall_dfs.h
+[e E3102 . `uc
+SEGEMENT_COMMON_ANODE 0
+SEGEMENT_COMMON_CATHOD 1
+]
+"45
+[e E3057 . `uc
+BTN_Pressed 0
+BTN_Released 1
+]
+[e E3061 . `uc
+BTN_Active_High 0
+BTN_Active_Low 1
+]
+"12 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/Button/Hall_Button_prog.c
+[e E3040 . `uc
+BTN_Pressed 0
+BTN_Released 1
+]
+[e E3044 . `uc
+BTN_Active_High 0
+BTN_Active_Low 1
+]
+"25
+[e E2982 . `uc
+GPIO_Status_Low 0
+GPIO_Status_High 1
+]
+"24 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/DC_Motor/Hall_Dc_Motor_prog.c
+[e E2986 . `uc
+GPIO_Dircetion_Input 0
+GPIO_Dircetion_Output 1
+]
+"54
+[e E2982 . `uc
+GPIO_Status_Low 0
+GPIO_Status_High 1
+]
+"16 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/Led/Hall_Led_prog.c
+[e E2986 . `uc
+GPIO_Dircetion_Input 0
+GPIO_Dircetion_Output 1
+]
+"41
+[e E2982 . `uc
+GPIO_Status_Low 0
+GPIO_Status_High 1
+]
+"18 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/Relay/Hall_Relay_prog.c
+[e E2986 . `uc
+GPIO_Dircetion_Input 0
+GPIO_Dircetion_Output 1
+]
+"41
+[e E2982 . `uc
+GPIO_Status_Low 0
+GPIO_Status_High 1
+]
+"27 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Mcal/Mcal_GPIO/Mcal_GPIO_prog.c
+[e E2986 . `uc
+GPIO_Dircetion_Input 0
+GPIO_Dircetion_Output 1
+]
+"76
+[e E3000 . `uc
+GPIO_Port_Index_A 0
+GPIO_Port_Index_B 1
+GPIO_Port_Index_C 2
+GPIO_Port_Index_D 3
+GPIO_Port_Index_E 4
+]
+"117
+[e E2982 . `uc
+GPIO_Status_Low 0
+GPIO_Status_High 1
+]
+"11 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/Seven_seg/Hall_Seven_seg_prog.c
+[e E3040 . `uc
+SEGEMENT_COMMON_ANODE 0
+SEGEMENT_COMMON_CATHOD 1
+]
+"33
+[e E2982 . `uc
+GPIO_Status_Low 0
+GPIO_Status_High 1
+]
+"48 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/Key_Pad/Hall_Key_Pad_prog.c
+[e E2982 . `uc
+GPIO_Status_Low 0
+GPIO_Status_High 1
+]
+"42 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/Hall_dfs.h
+[e E3102 . `uc
+SEGEMENT_COMMON_ANODE 0
+SEGEMENT_COMMON_CATHOD 1
+]
+"45
+[e E3057 . `uc
+BTN_Pressed 0
+BTN_Released 1
+]
+[e E3061 . `uc
+BTN_Active_High 0
+BTN_Active_Low 1
+]
+"12 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/Hall_dfs.c
+[e E3000 . `uc
+GPIO_Port_Index_A 0
+GPIO_Port_Index_B 1
+GPIO_Port_Index_C 2
+GPIO_Port_Index_D 3
+GPIO_Port_Index_E 4
+]
+[e E2990 . `uc
+GPIO_Pin_Index_0 0
+GPIO_Pin_Index_1 1
+GPIO_Pin_Index_2 2
+GPIO_Pin_Index_3 3
+GPIO_Pin_Index_4 4
+GPIO_Pin_Index_5 5
+GPIO_Pin_Index_6 6
+GPIO_Pin_Index_7 7
+]
+[e E2982 . `uc
+GPIO_Status_Low 0
+GPIO_Status_High 1
+]
+"33
+[e E2986 . `uc
+GPIO_Dircetion_Input 0
+GPIO_Dircetion_Output 1
+]
+"48 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/LCD/Hall_lcd_prog.c
+[e E2982 . `uc
+GPIO_Status_Low 0
+GPIO_Status_High 1
+]
+"12 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\App/Main.c
+[v _main main `(v  1 e 1 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"1177 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memset.c
+[v _memset memset `(*.30v  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"42 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/LCD/Hall_lcd_prog.c
+[v _HALL_LCD_4bit_sendCMD HALL_LCD_4bit_sendCMD `(uc  1 e 1 0 ]
+"57
+[v _HALL_LCD_4bit_sendChar HALL_LCD_4bit_sendChar `(uc  1 e 1 0 ]
+"111
+[v _HALL_LCD_4bit_goto HALL_LCD_4bit_goto `(uc  1 e 1 0 ]
+"130
+[v _HALL_LCD_8bit_init HALL_LCD_8bit_init `(uc  1 e 1 0 ]
+"158
+[v _HALL_LCD_8bit_sendCMD HALL_LCD_8bit_sendCMD `(uc  1 e 1 0 ]
+"173
+[v _HALL_LCD_8bit_sendChar HALL_LCD_8bit_sendChar `(uc  1 e 1 0 ]
+"200
+[v _HALL_LCD_8bit_sendSTR HALL_LCD_8bit_sendSTR `(uc  1 e 1 0 ]
+"227
+[v _HALL_LCD_8bit_goto HALL_LCD_8bit_goto `(uc  1 e 1 0 ]
+"246
+[v _HALL_LCD_convertU8toSTR HALL_LCD_convertU8toSTR `(uc  1 e 1 0 ]
+"284
+[v _LCD_send4Bits LCD_send4Bits `(uc  1 s 1 LCD_send4Bits ]
+"292
+[v _LCD_sendEnableSignal4Bits LCD_sendEnableSignal4Bits `(uc  1 s 1 LCD_sendEnableSignal4Bits ]
+"299
+[v _LCD_sendEnableSignal8Bits LCD_sendEnableSignal8Bits `(uc  1 s 1 LCD_sendEnableSignal8Bits ]
+"11 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Mcal/Mcal_GPIO/Mcal_GPIO_prog.c
+[v _Mcal_GPIO_initPinDirection Mcal_GPIO_initPinDirection `(uc  1 e 1 0 ]
+"117
+[v _MCAL_GPIO_writePinStatus MCAL_GPIO_writePinStatus `(uc  1 e 1 0 ]
+"203
+[v _MCAL_GPIO_getPinStatus MCAL_GPIO_getPinStatus `(uc  1 e 1 0 ]
+"239
+[v _MCAL_GPIO_togglePin MCAL_GPIO_togglePin `(uc  1 e 1 0 ]
+"274
+[v _MCAL_GPIO_init MCAL_GPIO_init `(uc  1 e 1 0 ]
+"10 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\App/Main.c
+[v _NumArr NumArr `[4]uc  1 e 4 0 ]
+"52 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4620.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"189
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"360
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"535
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"677
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"880
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"992
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"1104
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"1216
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"1328
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"1380
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1602
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1824
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"2046
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"2268
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"153 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+"12 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/DC_Motor/Hall_Dc_Motor_prog.c
+[v _objPin_motor_1 objPin_motor_1 `S30  1 s 1 objPin_motor_1 ]
+"13
+[v _objPin_motor_2 objPin_motor_2 `S30  1 s 1 objPin_motor_2 ]
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+"143 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/Hall_dfs.c
+[s S58 . 10 `S30 1 LCD_rs 1 0 `S30 1 LCD_en 1 1 `[8]S30 1 LCD_D 8 2 ]
+[v _LCD1_8Bit LCD1_8Bit `S58  1 e 10 0 ]
+"11 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/Key_Pad/Hall_Key_Pad_prog.c
+[v _btn_Value btn_Value `C[4][4]uc  1 s 16 btn_Value ]
+"12 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\App/Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"19
+} 0
+"246 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/LCD/Hall_lcd_prog.c
+[v _HALL_LCD_convertU8toSTR HALL_LCD_convertU8toSTR `(uc  1 e 1 0 ]
+{
+[v HALL_LCD_convertU8toSTR@copyValue copyValue `uc  1 p 1 wreg ]
+[v HALL_LCD_convertU8toSTR@copyValue copyValue `uc  1 p 1 wreg ]
+[v HALL_LCD_convertU8toSTR@copySTR copySTR `*.30uc  1 p 1 43 ]
+[v HALL_LCD_convertU8toSTR@copyValue copyValue `uc  1 p 1 44 ]
+"257
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S1338 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+"13
+[s S1341 _IO_FILE 11 `S1338 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S1341  1 a 11 32 ]
+"12
+[v sprintf@ap ap `[1]*.30v  1 a 1 31 ]
+"9
+[v sprintf@s s `*.30uc  1 p 1 25 ]
+[v sprintf@fmt fmt `*.31Cuc  1 p 1 26 ]
+"23
+} 0
+"1817 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.31uc  1 a 1 24 ]
+[s S1373 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.30S1373  1 p 1 21 ]
+[v vfprintf@fmt fmt `*.31Cuc  1 p 1 22 ]
+[v vfprintf@ap ap `*.30*.30v  1 p 1 23 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S1386 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S1386  1 a 4 16 ]
+"1179
+[v vfpfcnvrt@c c `uc  1 a 1 20 ]
+[v vfpfcnvrt@cp cp `*.31uc  1 a 1 15 ]
+"1180
+[v vfpfcnvrt@done done `a  1 a 1 14 ]
+[s S1373 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.30S1373  1 p 1 10 ]
+[v vfpfcnvrt@fmt fmt `*.30*.31uc  1 p 1 11 ]
+[v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 12 ]
+"1814
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S1338 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[s S1341 _IO_FILE 11 `S1338 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.30S1341  1 p 1 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 6 ]
+"4
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memset.c
+[v _memset memset `(*.30v  1 e 2 0 ]
+{
+"5
+[v memset@p p `*.30uc  1 a 1 5 ]
+"3
+[v memset@dest dest `*.30v  1 p 1 0 ]
+[v memset@c c `i  1 p 2 1 ]
+[v memset@n n `ui  1 p 2 3 ]
+"10
+} 0
+"200 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/LCD/Hall_lcd_prog.c
+[v _HALL_LCD_8bit_sendSTR HALL_LCD_8bit_sendSTR `(uc  1 e 1 0 ]
+{
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+[s S58 . 10 `S30 1 LCD_rs 1 0 `S30 1 LCD_en 1 1 `[8]S30 1 LCD_D 8 2 ]
+[v HALL_LCD_8bit_sendSTR@copyLCD copyLCD `*.30CS58  1 p 1 11 ]
+[v HALL_LCD_8bit_sendSTR@copyData copyData `*.30uc  1 p 1 12 ]
+"212
+} 0
+"173
+[v _HALL_LCD_8bit_sendChar HALL_LCD_8bit_sendChar `(uc  1 e 1 0 ]
+{
+"180
+[v HALL_LCD_8bit_sendChar@Counter Counter `uc  1 a 1 10 ]
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+"173
+[s S58 . 10 `S30 1 LCD_rs 1 0 `S30 1 LCD_en 1 1 `[8]S30 1 LCD_D 8 2 ]
+[v HALL_LCD_8bit_sendChar@copyLCD copyLCD `*.30CS58  1 p 1 6 ]
+[v HALL_LCD_8bit_sendChar@copyData copyData `uc  1 p 1 7 ]
+"187
+} 0
+"130
+[v _HALL_LCD_8bit_init HALL_LCD_8bit_init `(uc  1 e 1 0 ]
+{
+"138
+[v HALL_LCD_8bit_init@Counter Counter `uc  1 a 1 13 ]
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+"130
+[s S58 . 10 `S30 1 LCD_rs 1 0 `S30 1 LCD_en 1 1 `[8]S30 1 LCD_D 8 2 ]
+[v HALL_LCD_8bit_init@copyLCD copyLCD `*.30CS58  1 p 1 11 ]
+"157
+} 0
+"274 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Mcal/Mcal_GPIO/Mcal_GPIO_prog.c
+[v _MCAL_GPIO_init MCAL_GPIO_init `(uc  1 e 1 0 ]
+{
+"275
+[v MCAL_GPIO_init@retVal retVal `uc  1 a 1 6 ]
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+"274
+[v MCAL_GPIO_init@copyPinCFG copyPinCFG `*.30CS30  1 p 1 5 ]
+"284
+} 0
+"11
+[v _Mcal_GPIO_initPinDirection Mcal_GPIO_initPinDirection `(uc  1 e 1 0 ]
+{
+"13
+[v Mcal_GPIO_initPinDirection@retVal retVal `uc  1 a 1 3 ]
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+"11
+[v Mcal_GPIO_initPinDirection@copyPinCFG copyPinCFG `*.30CS30  1 p 1 0 ]
+"79
+} 0
+"158 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Hall/LCD/Hall_lcd_prog.c
+[v _HALL_LCD_8bit_sendCMD HALL_LCD_8bit_sendCMD `(uc  1 e 1 0 ]
+{
+"165
+[v HALL_LCD_8bit_sendCMD@Counter Counter `uc  1 a 1 10 ]
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+"158
+[s S58 . 10 `S30 1 LCD_rs 1 0 `S30 1 LCD_en 1 1 `[8]S30 1 LCD_D 8 2 ]
+[v HALL_LCD_8bit_sendCMD@copyLCD copyLCD `*.30CS58  1 p 1 6 ]
+[v HALL_LCD_8bit_sendCMD@copyCMD copyCMD `uc  1 p 1 7 ]
+"172
+} 0
+"299
+[v _LCD_sendEnableSignal8Bits LCD_sendEnableSignal8Bits `(uc  1 s 1 LCD_sendEnableSignal8Bits ]
+{
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+[s S58 . 10 `S30 1 LCD_rs 1 0 `S30 1 LCD_en 1 1 `[8]S30 1 LCD_D 8 2 ]
+[v LCD_sendEnableSignal8Bits@copyLCD copyLCD `*.30CS58  1 p 1 5 ]
+"305
+} 0
+"117 E:\Tracks\Embedded\PIC\Driver\pic18f4620__v1__.X\Mcal/Mcal_GPIO/Mcal_GPIO_prog.c
+[v _MCAL_GPIO_writePinStatus MCAL_GPIO_writePinStatus `(uc  1 e 1 0 ]
+{
+"118
+[v MCAL_GPIO_writePinStatus@retVal retVal `uc  1 a 1 4 ]
+[s S30 . 1 `uc 1 Port 1 0 :3:0 
+`uc 1 Pin 1 0 :3:3 
+`uc 1 Direction 1 0 :1:6 
+`uc 1 Status 1 0 :1:7 
+]
+"117
+[v MCAL_GPIO_writePinStatus@copyPinCFG copyPinCFG `*.30CS30  1 p 1 0 ]
+[v MCAL_GPIO_writePinStatus@copyStatusPin copyStatusPin `E2982  1 p 1 1 ]
+"201
+} 0
