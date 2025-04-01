@@ -1,0 +1,7 @@
+"./Src/HAL/LED/LED.o"
+"./Src/MCAL/GPIO/GPIO.o"
+"./Src/MCAL/RCC/RCC.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f103c8tx.o"

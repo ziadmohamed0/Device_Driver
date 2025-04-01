@@ -1,0 +1,4 @@
+/home/ziad/Ziad_WS/Device_Driver/Embedded_C++/AVR/atmega32/build/CMakeFiles/ATmega32_Driver.elf.dir
+/home/ziad/Ziad_WS/Device_Driver/Embedded_C++/AVR/atmega32/build/CMakeFiles/ATmega32_Driver.hex.dir
+/home/ziad/Ziad_WS/Device_Driver/Embedded_C++/AVR/atmega32/build/CMakeFiles/edit_cache.dir
+/home/ziad/Ziad_WS/Device_Driver/Embedded_C++/AVR/atmega32/build/CMakeFiles/rebuild_cache.dir

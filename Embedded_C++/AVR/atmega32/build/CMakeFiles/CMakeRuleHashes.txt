@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+665aa65829adf123ef90f02bccf3faf3 CMakeFiles/ATmega32_Driver.hex

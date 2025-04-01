@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;stm32f103c8t6/Inc/LIB/std_type.hpp&apos; to &apos;common.hpp&apos;" description="Rename resource &apos;std_type.hpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/LIB/std_type.hpp" name="common.hpp" stamp="1743472717810" updateReferences="true"/>
+</session>
