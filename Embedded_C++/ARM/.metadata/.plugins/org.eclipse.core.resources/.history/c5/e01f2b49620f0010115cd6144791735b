@@ -1,0 +1,22 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Apr 1, 2025
+ *      Author: ziad
+ */
+#include "HAL/HAL.hpp"
+
+int main() {
+	RCC::RCC::enablePeripheral(RCC::APB2ENR::PIN::IOPAEN);
+	RCC::RCC::enablePeripheral(RCC::APB1ENR::PIN::I2C1EN);
+	RCC::RCC::enablePeripheral(RCC::AHBENR::PIN::DMA1EN);
+
+	RCC::RCC::disablePeripheral(RCC::APB2ENR::PIN::IOPAEN);
+	RCC::RCC::disablePeripheral(RCC::APB1ENR::PIN::I2C1EN);
+	RCC::RCC::disablePeripheral(RCC::AHBENR::PIN::DMA1EN);
+
+	while(true) {
+
+	}
+	return 0;
+}

@@ -1,0 +1,27 @@
+/*
+ * RCC.cpp
+ *
+ *  Created on: Apr 1, 2025
+ *      Author: ziad
+ */
+#include "MCAL/RCC/RCC.hpp"
+
+void RCC::RCC::enablePeripheral(APB2ENR::PIN periph) {
+	BitMath::SET_BIT(REG32(APB2ENR::Base_Addresses), static_cast<StdType::uint8>(periph));
+}
+
+void RCC::RCC::disablePeripheral(APB2ENR::PIN periph) {
+
+}
+
+void RCC::RCC::setSystemClock(CFGR::PIN clockSource) {
+
+}
+
+void RCC::RCC::setPLLMultiplier(uint8_t multiplier) {
+
+}
+
+void RCC::RCC::resetPeripheral(APB2RSTR::PIN periph) {
+
+}

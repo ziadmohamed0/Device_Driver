@@ -1,0 +1,4 @@
+../Src/MCAL/GPIO/GPIO.cpp:11:1:GPIO::GPIO::GPIO(GPIO::PORT, GPIO::PIN)	24	static
+../Src/MCAL/GPIO/GPIO.cpp:31:6:void GPIO::GPIO::configurePin(GPIO::Mode, GPIO::OutputType, GPIO::Speed, GPIO::Pull)	16	static
+../Src/MCAL/GPIO/GPIO.cpp:34:6:void GPIO::GPIO::setPinStatus()	16	static
+../Src/MCAL/GPIO/GPIO.cpp:37:6:bool GPIO::GPIO::getPinStatus()	16	static

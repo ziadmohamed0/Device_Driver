@@ -1,0 +1,14 @@
+common.hpp:70:17:void BitMath::CLR_BIT(volatile uint8_t&, uint8_t)	1
+common.hpp:80:17:void BitMath::SET_BIT(volatile uint8_t&, uint8_t)	1
+RCC.cpp:15:1:RCC::RCC::RCC(RCC::CFGR::PIN)	1
+RCC.cpp:24:6:static void RCC::RCC::enablePeripheral(RCC::AHBENR::PIN)	1
+RCC.cpp:33:6:static void RCC::RCC::enablePeripheral(RCC::APB1ENR::PIN)	1
+RCC.cpp:42:6:static void RCC::RCC::enablePeripheral(RCC::APB2ENR::PIN)	1
+RCC.cpp:51:6:static void RCC::RCC::disablePeripheral(RCC::AHBENR::PIN)	1
+RCC.cpp:60:6:static void RCC::RCC::disablePeripheral(RCC::APB1ENR::PIN)	1
+RCC.cpp:69:6:static void RCC::RCC::disablePeripheral(RCC::APB2ENR::PIN)	1
+RCC.cpp:78:6:static void RCC::RCC::resetPeripheral(RCC::AHBSTR::PIN)	1
+RCC.cpp:88:6:static void RCC::RCC::resetPeripheral(RCC::APB1RSTR::PIN)	1
+RCC.cpp:98:6:static void RCC::RCC::resetPeripheral(RCC::APB2RSTR::PIN)	1
+RCC.cpp:108:6:static void RCC::RCC::setSystemClock(RCC::CFGR::PIN)	1
+RCC.cpp:120:6:static void RCC::RCC::setPLLMultiplier(StdType::uint8)	3

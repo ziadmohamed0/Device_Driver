@@ -35,6 +35,7 @@ namespace StdType {
     typedef uint8 		Std_Return; ///< Return type, typically used for status codes (e.g., success or error)
 } // namespace StdType
 
+
 namespace Status {
     /**
      * @brief Constants to represent common status values.
@@ -53,6 +54,9 @@ namespace Status {
 }
 
 namespace BitMath {
+
+	#define REG32(x) (*((volatile StdType::uint8 *)(x)))
+
     /**
      * @brief Bitwise manipulation functions for modifying bits in registers.
      */

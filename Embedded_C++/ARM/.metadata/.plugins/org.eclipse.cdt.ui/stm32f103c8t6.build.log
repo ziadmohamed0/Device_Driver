@@ -1,9 +1,6 @@
-06:04:17 **** Incremental Build of configuration Debug for project stm32f103c8t6 ****
+04:53:28 **** Incremental Build of configuration Debug for project stm32f103c8t6 ****
 make -j4 all 
-arm-none-eabi-g++ "../Src/MCAL/RCC/RCC.cpp" -mcpu=cortex-m3 -std=gnu++14 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/MCAL/RCC/RCC.d" -MT"Src/MCAL/RCC/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/MCAL/RCC/RCC.o"
 arm-none-eabi-g++ "../Src/MCAL/GPIO/GPIO.cpp" -mcpu=cortex-m3 -std=gnu++14 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/MCAL/GPIO/GPIO.d" -MT"Src/MCAL/GPIO/GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/MCAL/GPIO/GPIO.o"
-arm-none-eabi-g++ "../Src/HAL/LED/LED.cpp" -mcpu=cortex-m3 -std=gnu++14 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/HAL/LED/LED.d" -MT"Src/HAL/LED/LED.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/HAL/LED/LED.o"
-arm-none-eabi-g++ "../Src/main.cpp" -mcpu=cortex-m3 -std=gnu++14 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
 arm-none-eabi-g++ -o "stm32f103c8t6.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/ziad/Ziad_WS/Device_Driver/Embedded_C++/ARM/stm32f103c8t6/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c8t6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: stm32f103c8t6.elf
  
@@ -16,5 +13,5 @@ Finished building: default.size.stdout
 Finished building: stm32f103c8t6.list
  
 
-06:04:18 Build Finished. 0 errors, 0 warnings. (took 787ms)
+04:53:28 Build Finished. 0 errors, 0 warnings. (took 836ms)
 

@@ -1,0 +1,14 @@
+/*
+ * GPIO.hpp
+ *
+ *  Created on: Apr 1, 2025
+ *      Author: ziad
+ */
+
+#ifndef MCAL_GPIO_GPIO_HPP_
+#define MCAL_GPIO_GPIO_HPP_
+
+/* --------------- includes --------------- */
+#include "LIB/common.hpp"
+
+#endif /* MCAL_GPIO_GPIO_HPP_ */
