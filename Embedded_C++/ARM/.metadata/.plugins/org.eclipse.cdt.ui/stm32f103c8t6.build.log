@@ -1,4 +1,4 @@
-04:53:28 **** Incremental Build of configuration Debug for project stm32f103c8t6 ****
+05:37:26 **** Incremental Build of configuration Debug for project stm32f103c8t6 ****
 make -j4 all 
 arm-none-eabi-g++ "../Src/MCAL/GPIO/GPIO.cpp" -mcpu=cortex-m3 -std=gnu++14 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/MCAL/GPIO/GPIO.d" -MT"Src/MCAL/GPIO/GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/MCAL/GPIO/GPIO.o"
 arm-none-eabi-g++ -o "stm32f103c8t6.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/ziad/Ziad_WS/Device_Driver/Embedded_C++/ARM/stm32f103c8t6/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c8t6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -7,11 +7,14 @@ Finished building target: stm32f103c8t6.elf
 arm-none-eabi-size   stm32f103c8t6.elf 
 arm-none-eabi-objdump -h -S  stm32f103c8t6.elf  > "stm32f103c8t6.list"
    text	   data	    bss	    dec	    hex	filename
-    556	      8	   1568	   2132	    854	stm32f103c8t6.elf
+   1416	      8	   1568	   2992	    bb0	stm32f103c8t6.elf
+arm-none-eabi-objcopy  -O ihex  stm32f103c8t6.elf  "stm32f103c8t6.hex"
 Finished building: default.size.stdout
  
+Finished building: stm32f103c8t6.hex
 Finished building: stm32f103c8t6.list
  
+ 
 
-04:53:28 Build Finished. 0 errors, 0 warnings. (took 836ms)
+05:37:27 Build Finished. 0 errors, 0 warnings. (took 1s.40ms)
 

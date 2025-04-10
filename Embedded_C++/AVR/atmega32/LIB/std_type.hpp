@@ -46,6 +46,8 @@ namespace Status {
 }
 
 namespace BitMath {
+	#define REG8(x) (*((volatile StdType::uint8 *)(x)))
+
     /**
      * @brief clear bit in register.
      * 

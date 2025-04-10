@@ -1,0 +1,55 @@
+/*
+ * SYSTICK.cpp
+ *
+ *  Created on: Apr 2, 2025
+ *      Author: ziad
+ */
+
+#include "CORE/SYSTICK/SYSTICK.hpp"
+
+
+/**
+ * @brief Constructor to initialize SysTick with a specific system clock and tick duration.
+ * @param systemClockHz System clock frequency in Hz.
+ * @param tickMs Time per tick in milliseconds.
+ */
+SYSTICK::SYSTICK(StdType::uint32 systemClockHz, StdType::uint32 tickMs)
+    : clockFrequency(systemClockHz), tickTimeMs(tickMs) {
+
+    StdType::uint32 reloadValue = (systemClockHz / 1000) * tickMs - 1;
+    REG32(RVR::Register) = reloadValue; // Set reload value
+    REG32(CVR::Register) = 0; // Reset current counter value
+}
+
+/**
+ * @brief Start the SysTick timer.
+ */
+void SYSTICK::SYSTICK::start() {
+    BitMath::SET_BIT(REG32(CSR::Register), static_cast<StdType::uint8>(CSR::PIN::ENABLE));
+}
+
+/**
+ * @brief Stop the SysTick timer.
+ */
+void SYSTICK::SYSTICK::stop() {
+    BitMath::CLR_BIT(REG32(CSR::Register), static_cast<StdType::uint8>(CSR::PIN::ENABLE));
+}
+
+/**
+ * @brief Check if the SysTick timer has elapsed (COUNTFLAG is set).
+ * @return true if timer elapsed, false otherwise.
+ */
+bool SYSTICK::SYSTICK::hasElapsed() {
+    return BitMath::GET_BIT(REG32(CSR::Register), static_cast<StdType::uint8>(CSR::PIN::COUNTFLAG));
+}
+
+/**
+ * @brief Creates a blocking delay using SysTick.
+ * @param ms Delay in milliseconds.
+ */
+void SYSTICK::SYSTICK::delayMs(StdType::uint32 ms) {
+    for (StdType::uint32 i = 0; i < ms / tickTimeMs; ++i) {
+        REG32(CVR::Register) = 0; // Reset counter
+        while (!hasElapsed());    // Wait for timer to elapse
+    }
+}

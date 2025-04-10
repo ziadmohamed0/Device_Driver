@@ -7,10 +7,22 @@
 #include "HAL/HAL.hpp"
 
 int main() {
+	GPIO::GPIO Led(GPIO::PORT::A, GPIO::PIN::PIN0),
+			btn(GPIO::PORT::B, GPIO::PIN::PIN0);
+	Led.configurePin(GPIO::Mode::OutPut, GPIO::OutputType::Push_Pull,
+			GPIO::Speed::HIGH, GPIO::Pull::UP);
 
-
+	btn.configurePin(GPIO::Mode::InPut, GPIO::OutputType::Open_Drain,
+			GPIO::Speed::HIGH, GPIO::Pull::UP);
+	Led.setPinStatus();
 	while(true) {
+		if(btn.getPinStatus() == true) {
+			Led.setPinStatus();
+		}
 
+		else {
+			Led.clearPinStatus();
+		}
 	}
 	return 0;
 }

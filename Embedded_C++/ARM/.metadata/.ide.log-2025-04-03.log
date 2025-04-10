@@ -1,0 +1,12 @@
+2025-04-03 18:17:45,406 [INFO] Activator:176 - 
+
+
+2025-04-03 18:17:45,411 [INFO] Activator:177 - !SESSION log4j initialized
+2025-04-03 18:17:56,856 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-04-03 18:18:03,610 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2025-04-03 18:18:08,034 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2025-04-03 18:18:11,314 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2025-04-03 18:18:20,006 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2025-04-03 18:18:20,007 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2025-04-03 18:18:20,007 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2025-04-03 18:19:09,664 [ERROR] ConfigurationRetriever:142 - IOException on connection: Remote host terminated the handshake

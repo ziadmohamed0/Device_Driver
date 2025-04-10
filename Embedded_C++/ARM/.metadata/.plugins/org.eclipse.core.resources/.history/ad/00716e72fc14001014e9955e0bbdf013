@@ -1,0 +1,24 @@
+/*
+ * BTN.hpp
+ *
+ *  Created on: Apr 9, 2025
+ *      Author: ziad
+ */
+
+#ifndef BUTTON_BTN_HPP_
+#define BUTTON_BTN_HPP_
+
+extern "C" {
+    #include "../Inc/main.h"
+}
+
+class Button {
+private :
+	GPIO_TypeDef* BTN_Port;
+	uint16_t pinNumber{0};
+public:
+	Button(GPIO_TypeDef *copyPortBTN, uint16_t copyPinNumber);
+	uint32_t getValue();
+};
+
+#endif /* BUTTON_BTN_HPP_ */

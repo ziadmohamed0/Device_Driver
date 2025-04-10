@@ -9,7 +9,7 @@
 #define MCAL_RCC_RCC_HPP_
 
 /* --------------- includes --------------- */
-#include "../../LIB/common.hpp"
+#include "CORE/CORE.hpp"
 
 namespace RCC {
 	namespace CR {

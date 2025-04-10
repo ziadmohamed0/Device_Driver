@@ -1,5 +1,5 @@
-../Inc/MCAL/RCC/../../LIB/common.hpp:70:17:void BitMath::CLR_BIT(volatile uint8_t&, uint8_t)	16	static
-../Inc/MCAL/RCC/../../LIB/common.hpp:80:17:void BitMath::SET_BIT(volatile uint8_t&, uint8_t)	16	static
+../Inc/CORE/SYSTICK/../../LIB/common.hpp:70:17:void BitMath::CLR_BIT(volatile uint8_t&, uint8_t)	16	static
+../Inc/CORE/SYSTICK/../../LIB/common.hpp:80:17:void BitMath::SET_BIT(volatile uint8_t&, uint8_t)	16	static
 ../Src/MCAL/RCC/RCC.cpp:15:1:RCC::RCC::RCC(RCC::CFGR::PIN)	16	static
 ../Src/MCAL/RCC/RCC.cpp:24:6:static void RCC::RCC::enablePeripheral(RCC::AHBENR::PIN)	16	static
 ../Src/MCAL/RCC/RCC.cpp:33:6:static void RCC::RCC::enablePeripheral(RCC::APB1ENR::PIN)	16	static

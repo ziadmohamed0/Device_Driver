@@ -2,3 +2,6 @@
 1743466194341	Delete resource 'stm32f103c8t6/Src/HAL/LED/LED.hpp'
 1743472531285	Delete resource 'stm32f103c8t6/Inc/LIB/stm32f103xx.hpp'
 1743472824548	Delete resource 'stm32f103c8t6/Src/main.c'
+1743607959973	Delete resource 'stm32f103c8t6/Inc/CORE/SYSTICK.hpp'
+1743623052226	Delete resource 'stm32f103c8'
+1743623176146	Delete resource 'test'

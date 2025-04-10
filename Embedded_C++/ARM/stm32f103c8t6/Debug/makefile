@@ -13,6 +13,7 @@ RM := rm -rf
 -include Src/MCAL/RCC/subdir.mk
 -include Src/MCAL/GPIO/subdir.mk
 -include Src/HAL/LED/subdir.mk
+-include Src/CORE/SYSTICK/subdir.mk
 -include Src/subdir.mk
 -include objects.mk
 
@@ -69,6 +70,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 stm32f103c8t6.list \
 
+OBJCOPY_HEX += \
+stm32f103c8t6.hex \
+
 
 # All Target
 all: main-build
@@ -92,12 +96,17 @@ stm32f103c8t6.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+stm32f103c8t6.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "stm32f103c8t6.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) default.size.stdout stm32f103c8t6.elf stm32f103c8t6.list stm32f103c8t6.map
+	-$(RM) default.size.stdout stm32f103c8t6.elf stm32f103c8t6.hex stm32f103c8t6.list stm32f103c8t6.map
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

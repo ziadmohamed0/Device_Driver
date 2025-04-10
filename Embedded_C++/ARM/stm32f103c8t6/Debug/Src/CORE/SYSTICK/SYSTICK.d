@@ -1,0 +1,4 @@
+Src/CORE/SYSTICK/SYSTICK.o: ../Src/CORE/SYSTICK/SYSTICK.cpp \
+ ../Inc/CORE/SYSTICK/SYSTICK.hpp ../Inc/CORE/SYSTICK/../../LIB/common.hpp
+../Inc/CORE/SYSTICK/SYSTICK.hpp:
+../Inc/CORE/SYSTICK/../../LIB/common.hpp:

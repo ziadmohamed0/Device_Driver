@@ -1,0 +1,20 @@
+/*
+ * BTN.hpp
+ *
+ *  Created on: Apr 9, 2025
+ *      Author: ziad
+ */
+
+#ifndef BUTTON_BTN_HPP_
+#define BUTTON_BTN_HPP_
+
+#include "../../Core/Inc/main.h"
+
+class Button {
+private :
+	GPIO_TypeDef* BTN_Port;
+	uint8_t pinNumber;
+public:
+};
+
+#endif /* BUTTON_BTN_HPP_ */

@@ -1,0 +1,28 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Apr 1, 2025
+ *      Author: ziad
+ */
+#include "HAL/HAL.hpp"
+#include <utility>
+
+int main() {
+	GPIO::GPIO Led(GPIO::PORT::A, GPIO::PIN::PIN0),
+			btn(GPIO::PORT::B, GPIO::PIN::PIN0);
+	Led.configurePin(GPIO::Mode::OutPut, GPIO::OutputType::Push_Pull,
+			GPIO::Speed::HIGH, GPIO::Pull::UP);
+
+	btn.configurePin(GPIO::Mode::InPut, GPIO::OutputType::Open_Drain,
+			GPIO::Speed::HIGH, GPIO::Pull::UP);
+	while(true) {
+		if(btn.getPinStatus() == true) {
+			Led.setPinStatus();
+		}
+
+		else {
+			Led.clearPinStatus();
+		}
+	}
+	return 0;
+}

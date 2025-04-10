@@ -1,0 +1,25 @@
+/*
+ * BTN.cpp
+ *
+ *  Created on: Apr 9, 2025
+ *      Author: ziad
+ */
+
+#include "BTN.h"
+
+class Button {
+private :
+	GPIO_TypeDef* BTN_Port;
+	uint16_t pinNumber{0};
+public:
+	Button(GPIO_TypeDef copyPortBTN, uint16_t copyPinNumber);
+	uint32_t getValue();
+};
+
+Button::Button(GPIO_TypeDef copyPortBTN, uint16_t copyPinNumber) : Button::BTN_Port(copyPortBTN), Button::pinNumber(copyPinNumber) {
+
+}
+
+uint32_t Button::getValue() {
+	return GET_BIT(Button::BTN_Port->IDR, Button::BTN_Port);
+}

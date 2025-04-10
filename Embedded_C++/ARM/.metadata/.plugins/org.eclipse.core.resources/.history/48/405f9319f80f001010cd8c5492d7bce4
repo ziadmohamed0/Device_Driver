@@ -1,0 +1,60 @@
+/*
+ * SYSTICK.cpp
+ *
+ *  Created on: Apr 2, 2025
+ *      Author: Ziad
+ */
+
+#include "CORE/SYSTICK/SYSTICK.hpp"
+
+namespace SYSTICK {
+
+/**
+ * @brief Constructor for SysTick driver.
+ * @param systemClockHz System clock frequency in Hz (e.g., 16MHz → 16000000)
+ * @param tickMs Time per tick in milliseconds (e.g., 1ms for SysTick)
+ */
+SYSTICK::SYSTICK(StdType::uint32 systemClockHz, StdType::uint32 tickMs)
+    : clockFrequency(systemClockHz), tickTimeMs(tickMs) {
+
+    // Compute the reload value (limit to the max value 0xFFFFFF)
+    StdType::uint32 reloadValue = (clockFrequency / 1000) * tickTimeMs;
+    if (reloadValue > 0xFFFFFF) {
+        reloadValue = 0xFFFFFF; // Set to max allowed value
+    }
+    REG32(RVR::Register) = reloadValue;
+
+    // Reset the current value register
+    REG32(CVR::Register) = 0;
+
+    // Enable SysTick with processor clock and interrupt
+    BitMath::SET_BIT(REG32(CSR::Register), static_cast<StdType::uint8>(CSR::PIN::ENABLE));
+    BitMath::SET_BIT(REG32(CSR::Register), static_cast<StdType::uint8>(CSR::PIN::CLKSOURCE));
+    BitMath::SET_BIT(REG32(CSR::Register), static_cast<StdType::uint8>(CSR::PIN::TICKINT)); // Enable SysTick interrupt
+}
+
+/**
+ * @brief Starts the SysTick timer.
+ */
+void SYSTICK::start() {
+    BitMath::SET_BIT(REG32(CSR::Register), static_cast<StdType::uint8>(CSR::PIN::ENABLE));
+}
+
+/**
+ * @brief Stops the SysTick timer.
+ */
+void SYSTICK::stop() {
+    BitMath::CLR_BIT(REG32(CSR::Register), static_cast<StdType::uint8>(CSR::PIN::ENABLE));
+}
+
+/**
+ * @brief Delays execution for a specific number of milliseconds.
+ * @param ms The number of milliseconds to delay.
+ */
+void SYSTICK::delayMs(StdType::uint32 ms) {
+    for (StdType::uint32 i = 0; i < ms; i++) {
+        while (!(REG32(CSR::Register) & (1 << static_cast<StdType::uint8>(CSR::PIN::COUNTFLAG)))); // Wait for COUNTFLAG to be set
+    }
+}
+
+} // namespace SYSTICK

@@ -1,0 +1,16 @@
+/*
+ * CORE.hpp
+ *
+ *  Created on: Apr 2, 2025
+ *      Author: ziad
+ */
+
+#ifndef CORE_CORE_HPP_
+#define CORE_CORE_HPP_
+
+
+/* --------------- includes --------------- */
+#include "SYSTICK/SYSTICK.hpp"
+
+
+#endif /* CORE_CORE_HPP_ */

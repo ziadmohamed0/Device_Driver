@@ -9,7 +9,7 @@
 #define MCAL_GPIO_GPIO_HPP_
 
 /* --------------- includes --------------- */
-#include "LIB/common.hpp"
+#include "CORE/CORE.hpp"
 
 namespace GPIO {
 	enum class PORT : StdType::uint32 {
@@ -69,11 +69,14 @@ namespace GPIO {
 
 	    void configurePin(Mode copyMode, OutputType copyType, Speed copySpeed, Pull copyPull);
 	    void setPinStatus();
+	    StdType::uint32 getPortAddress() const;
+	    void clearPinStatus();
+	    void togglePinStatus();
 	    bool getPinStatus();
 
-	    void configurePort(OutputType copyType, Speed copySpeed, Pull copyPull);
-	    void setPortStatus();
-	    bool getPortStatus();
+//	    void configurePort(OutputType copyType, Speed copySpeed, Pull copyPull);
+//	    void setPortStatus();
+//	    bool getPortStatus();
 	};
 }
 

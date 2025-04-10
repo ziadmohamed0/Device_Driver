@@ -1,4 +1,7 @@
-GPIO.cpp:11:1:GPIO::GPIO::GPIO(GPIO::PORT, GPIO::PIN)	9
-GPIO.cpp:31:6:void GPIO::GPIO::configurePin(GPIO::Mode, GPIO::OutputType, GPIO::Speed, GPIO::Pull)	1
-GPIO.cpp:34:6:void GPIO::GPIO::setPinStatus()	1
-GPIO.cpp:37:6:bool GPIO::GPIO::getPinStatus()	1
+GPIO.cpp:17:1:GPIO::GPIO::GPIO(GPIO::PORT, GPIO::PIN)	9
+GPIO.cpp:44:6:void GPIO::GPIO::configurePin(GPIO::Mode, GPIO::OutputType, GPIO::Speed, GPIO::Pull)	4
+GPIO.cpp:92:17:StdType::uint32 GPIO::GPIO::getPortAddress() const	9
+GPIO.cpp:106:6:void GPIO::GPIO::setPinStatus()	1
+GPIO.cpp:113:6:void GPIO::GPIO::clearPinStatus()	1
+GPIO.cpp:121:6:void GPIO::GPIO::togglePinStatus()	1
+GPIO.cpp:130:6:bool GPIO::GPIO::getPinStatus()	1

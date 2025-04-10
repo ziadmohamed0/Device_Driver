@@ -20,6 +20,7 @@ C_UPPER_DEPS :=
 S_DEPS := 
 C_DEPS := 
 CC_DEPS := 
+OBJCOPY_HEX := 
 SIZE_OUTPUT := 
 C++_DEPS := 
 SU_FILES := 
@@ -32,6 +33,7 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Src/CORE/SYSTICK \
 Src/HAL/LED \
 Src/MCAL/GPIO \
 Src/MCAL/RCC \

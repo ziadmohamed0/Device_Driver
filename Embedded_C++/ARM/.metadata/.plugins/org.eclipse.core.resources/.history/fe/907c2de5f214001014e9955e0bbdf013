@@ -1,0 +1,116 @@
+/*
+ * GPIO.cpp
+ *
+ *  Created on: Apr 1, 2025
+ *      Author: ziad
+ */
+
+#include "MCAL/GPIO/GPIO.hpp"
+#include "MCAL/RCC/RCC.hpp"
+
+/**
+ * @brief GPIO Constructor.
+ * Enables the clock for the given GPIO port and assigns the pin.
+ * @param copyPort The GPIO port (A, B, C, D, E).
+ * @param copyPin The GPIO pin (0-15).
+ */
+GPIO::GPIO::GPIO(PORT copyPort, PIN copyPin) : port(copyPort), pin(copyPin) {
+	switch(port) {
+	case PORT::A:
+		RCC::RCC::enablePeripheral(RCC::APB2ENR::PIN::IOPAEN);
+		break;
+	case PORT::B:
+		RCC::RCC::enablePeripheral(RCC::APB2ENR::PIN::IOPBEN);
+		break;
+	case PORT::C:
+		RCC::RCC::enablePeripheral(RCC::APB2ENR::PIN::IOPCEN);
+		break;
+	case PORT::D:
+		RCC::RCC::enablePeripheral(RCC::APB2ENR::PIN::IOPDEN);
+		break;
+	case PORT::E:
+		RCC::RCC::enablePeripheral(RCC::APB2ENR::PIN::IOPEEN);
+		break;
+	}
+}
+
+/**
+ * @brief Configures the GPIO pin mode, output type, speed, and pull-up/down resistors.
+ * @param copyMode GPIO mode (input, output, alternate function, analog).
+ * @param copyType Output type (push-pull, open-drain).
+ * @param copySpeed Output speed (low, medium, high, very high).
+ * @param copyPull Pull resistor configuration (no pull, pull-up, pull-down).
+ */
+void GPIO::GPIO::configurePin(Mode copyMode, OutputType copyType, Speed copySpeed, Pull copyPull) {
+    // Calculate base address for the corresponding GPIO port
+	volatile StdType::uint32 gpioBasePort = static_cast<StdType::uint32>(port);
+
+    // Configure mode (input, output, alternate, analog)
+    switch(copyMode) {
+    case Mode::OutPut:
+    	BitMath::CLR_BIT(gpioBasePort, PIN::PIN3);
+    	switch(copyType){
+    	case OutputType::Push_Pull:
+
+    		break;
+    	case OutputType::Open_Drain:
+
+    		break;
+    	}
+    	break;
+    }
+
+    // Configure output type (push-pull or open-drain)
+
+
+    // Configure speed
+
+    // Configure pull-up/pull-down resistors
+
+}
+
+/**
+ * @brief Returns the base address of the selected GPIO port.
+ */
+StdType::uint32 GPIO::GPIO::getPortAddress() const {
+    switch (port) {
+        case PORT::A: return baseAddressesPeripheral::PortA;
+        case PORT::B: return baseAddressesPeripheral::PortB;
+        case PORT::C: return baseAddressesPeripheral::PortC;
+        case PORT::D: return baseAddressesPeripheral::PortD;
+        case PORT::E: return baseAddressesPeripheral::PortE;
+        default: return 0; // Handle error case
+    }
+}
+
+/**
+ * @brief Sets the GPIO pin to HIGH.
+ */
+void GPIO::GPIO::setPinStatus() {
+    REG32(getPortAddress() + 0x18) = (1 << static_cast<StdType::uint32>(pin));
+}
+
+/**
+ * @brief Clears the GPIO pin to LOW.
+ */
+void GPIO::GPIO::clearPinStatus() {
+    REG32(getPortAddress() + 0x18) = (1 << (static_cast<StdType::uint32>(pin) + 16));
+}
+
+
+/**
+ * @brief Toggles the GPIO pin.
+ */
+void GPIO::GPIO::togglePinStatus() {
+    StdType::uint32 *ODR = reinterpret_cast<StdType::uint32 *>(static_cast<StdType::uint32>(port) + 0x14);
+    *ODR ^= (1 << (static_cast<StdType::uint32>(pin)));
+}
+
+/**
+ * @brief Reads the GPIO pin status.
+ * @return true if pin is HIGH, false if pin is LOW.
+ */
+bool GPIO::GPIO::getPinStatus() {
+    StdType::uint32 *IDR = reinterpret_cast<StdType::uint32 *>(static_cast<StdType::uint32>(port) + 0x10);
+    return ((*IDR >> (static_cast<StdType::uint32>(pin))) & 1);
+}

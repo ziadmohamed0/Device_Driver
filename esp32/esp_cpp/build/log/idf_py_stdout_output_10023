@@ -1,0 +1,41 @@
+Command: ninja app-flash
+[1/7] Building CXX object esp-idf/core/CMakeFiles/__idf_core.dir/src/main.cpp.obj
+[2/7] Linking C static library esp-idf/core/libcore.a
+[3/7] Generating ld/sections.ld
+[4/7] Linking CXX executable CPP_ESP.elf
+[5/7] Generating binary image from built executable
+esptool.py v4.9.dev6
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/ziad/Ziad_WS/Device_Driver/esp32/esp_cpp/build/CPP_ESP.bin
+[6/7] cd /home/ziad/Ziad_WS/Device_Driver/esp32/esp_cpp/build/esp-idf/esptool_py && /home/ziad/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/ziad/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ziad/Ziad_WS/Device_Driver/esp32/esp_cpp/build/partition_table/partition-table.bin /home/ziad/Ziad_WS/Device_Driver/esp32/esp_cpp/build/CPP_ESP.bin
+CPP_ESP.bin binary size 0x2bb30 bytes. Smallest app partition is 0x100000 bytes. 0xd44d0 bytes (83%) free.
+[6/7] cd /home/ziad/esp-idf/components/esptool_py && /home/ziad/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/ziad/esp-idf -D "SERIAL_TOOL=/home/ziad/.espressif/python_env/idf5.5_py3.10_env/bin/python;;/home/ziad/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@app-flash_args" -D WORKING_DIRECTORY=/home/ziad/Ziad_WS/Device_Driver/esp32/esp_cpp/build -P /home/ziad/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x10000 CPP_ESP.bin
+esptool.py v4.9.dev6
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ac:15:18:d5:24:78
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00010000 to 0x0003bfff...
+Compressed 178992 bytes to 97228...
+Writing at 0x00010000... (16 %)
+Writing at 0x0001c3bb... (33 %)
+Writing at 0x00021e5b... (50 %)
+Writing at 0x000279ed... (66 %)
+Writing at 0x0002ef39... (83 %)
+Writing at 0x00035b30... (100 %)
+Wrote 178992 bytes (97228 compressed) at 0x00010000 in 2.8 seconds (effective 514.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

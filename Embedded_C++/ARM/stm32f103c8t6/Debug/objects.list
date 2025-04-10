@@ -1,3 +1,4 @@
+"./Src/CORE/SYSTICK/SYSTICK.o"
 "./Src/HAL/LED/LED.o"
 "./Src/MCAL/GPIO/GPIO.o"
 "./Src/MCAL/RCC/RCC.o"

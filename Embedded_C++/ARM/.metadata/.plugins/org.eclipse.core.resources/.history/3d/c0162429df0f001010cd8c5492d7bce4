@@ -1,0 +1,22 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Apr 1, 2025
+ *      Author: ziad
+ */
+#include "HAL/HAL.hpp"
+
+int main() {
+	GPIO::GPIO Led(GPIO::PORT::A, GPIO::PIN::PIN0);
+	SYSTICK::SYSTICK delay(8000000, 1);
+	Led.configurePin(GPIO::Mode::OutPut, GPIO::OutputType::Push_Pull,
+			GPIO::Speed::HIGH, GPIO::Pull::UP);
+
+	while(true) {
+		Led.setPinStatus();
+		delay.delayMs(10);
+		Led.clearPinStatus();
+		delay.delayMs(10);
+	}
+	return 0;
+}
